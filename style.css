@@ -8,6 +8,7 @@ body{
     line-height: 1.2;
 }
 .container-1{
+    position: relative;
     width:100%;
     height: 140px;
     background-color: #1E90FF;
@@ -16,12 +17,16 @@ body{
     position: absolute;
     top: 24px;
     left: 24px;
+    animation: moveTopToBottomimg1 1s ease-out;
 }
+
 .sub-cont-1{
     display: flex;
     flex-direction: row;
     justify-content: end;
+    animation: moveTopToBottomimg1 1s ease-out;
 }
+
 .help,.explore,.english{
     margin-top: 24px;
     margin-right: 25px;
@@ -44,9 +49,20 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: end;
+    animation: moveTopToBottomimg1 1s ease-out;
    
 }
+@keyframes moveTopToBottomimg1 {
+    from{
+        transform: translateY(-110%);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
+}
 #Our{
+    width: 8.8rem;
     outline: none;
     background-color: #1E90FF;
     border: none;
@@ -59,6 +75,7 @@ body{
     border-bottom: 1px solid white;
 }
 #List{
+    width: 6rem;
     outline: none;
     background-color: #1E90FF;
     border: none;
@@ -110,7 +127,9 @@ body{
     margin-top: 24px;
     margin-right: 70px;
 }
+
 .container-2{
+    position:relative;
     width: 100%;
     height: 60px;
     background-color: #F5F5F5;
@@ -125,6 +144,17 @@ body{
     padding-left: 2%;
     border: none;
     outline-color: #1E90FF;
+    animation: moveLeftToRightsearch2 1s ease-out;
+}
+
+@keyframes moveLeftToRightsearch2 {
+    from{
+        transform: translateX(-110%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
 }
 #awasome-search-icon{
     font-size: 30px;
@@ -132,6 +162,16 @@ body{
     top: 8px;
     margin-left: -45px;
     cursor:pointer;
+    animation: moveLeftToRightsearch2 1s ease-out;
+}
+@keyframes moveLeftToRightsearch2 {
+    from{
+        transform: translateX(-110%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
 }
 .container-3{
     width: 100%;
@@ -142,6 +182,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-left: 80px;
+    animation: moveLeftToRight424151 1s ease-out;
 }
 .sub-cont-3 .world{
     font-weight: 30px;
@@ -150,7 +191,7 @@ body{
     margin-top: 20px;
     margin-left: 10px;
 }
-.state,.India{
+.state,.India,.ar-head{
     margin-top: 20px;
     margin-left: 10px;
 }
@@ -161,9 +202,13 @@ body{
     margin-left: 80px;
 
 }
+.flag{
+    animation: moveLeftToRight424151 1s ease-out;
+}
 .textIndia{
     margin-left: 10px;
     font-size: larger;
+    animation: moveLeftToRight424151 1s ease-out;
     
 }
 .container-4{
@@ -176,6 +221,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-left: 80px;
+    animation: moveLeftToRight424151 1s ease-out;
     
 }
 .description{
@@ -226,6 +272,7 @@ body{
     border-radius: 5px;
     padding: 1%;
     background-color: #F5F5F5;
+    animation: moveLeftToRight424151 1s ease-out;
 }
 .mandates4{
     width: 14.5%;
@@ -235,6 +282,7 @@ body{
     padding: 1%;
     margin-left: 30px;
     background-color: #F5F5F5;
+    animation: moveLeftToRight424151 1s ease-out;
 }
 .report151{
     width: 14.5%;
@@ -244,13 +292,25 @@ body{
     padding: 1%;
     margin-left: 30px;
     background-color: #F5F5F5;
+    animation: moveLeftToRight424151 1s ease-out;
+}
+@keyframes moveLeftToRight424151 {
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
 }
 .both-rati-mandate{
     width:40%;
     height: 140px;
     padding: 1%;
     margin-left: 30px;
+    animation: moveRightToLeftratimandate 1s ease-out;
 }
+
 .ratification{
     height: 60px;
     border-bottom: 1px solid;
@@ -268,6 +328,7 @@ body{
     border-radius: 5px;
     padding: 1%;
     background-color: #F5F5F5;
+    animation: moveLeftToRight424151 1s ease-out;
 }
 .international-amount861{
     width: 14.5%;
@@ -277,6 +338,16 @@ body{
     padding: 1%;
     margin-left: 30px;
     background-color: #F5F5F5;
+    animation: moveLeftToRight424151 1s ease-out;
+}
+@keyframes moveLeftToRight424151 {
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
 }
 .none{
     width: 14.5%;
@@ -295,11 +366,26 @@ body{
     height: 60px;
     text-decoration: none;
 }
+.country{
+    animation: moveRightToLeftratimandate 1s ease-out;
+}
 .country a:hover{
     text-decoration-line: underline;
 }
 #world-heritage{
     margin-left: 15px;
+}
+.world-heritage{
+    animation: moveRightToLeftratimandate 1s ease-out;
+}
+@keyframes moveRightToLeftratimandate {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
 }
 .world-heritage a{
     text-decoration: none;
@@ -395,6 +481,12 @@ body{
     border-bottom: 1px solid;
     margin-left: 80px;
 }
+.container-8 img{
+    transition: all 1s linear;
+}
+.container-8 img:hover{
+        transform: scale(1.1);
+}
 .Activities-image{
     padding-top: 20px;
 }
@@ -403,10 +495,24 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
+    
+}
+.rapid-image-text{
+    animation: moveLeftToRight 1s ease-out;
+}
+@keyframes moveLeftToRight {
+    from{
+        transform: translateX(-120%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
 }
 .rapid-text,.skill-text,.enhancing-text,.heritage-text{
     width:310px;
     height:70px;
+    margin-top: 0.5rem;
 }
 
 .container-9{
@@ -414,6 +520,12 @@ body{
     height: 420px;
     border-bottom: 1px solid;
     margin-left: 80px;
+}
+.container-9 img{
+    transition: all 1s  linear;
+}
+.container-9 img:hover{
+    transform: scale(1.1);
 }
 .News-image{
     padding-top: 20px;
@@ -427,6 +539,8 @@ body{
 .danuble-text,.cultural-africa-text,.india-text,.bird-text{
     width:310px;
     height:70px;
+    margin-top: 0.5rem;
+
 }
 
 .container-10{
@@ -434,6 +548,15 @@ body{
     height: 420px;
     border-bottom: 1px solid;
     margin-left: 80px;
+}
+.container-10 img{
+    transition: all 1s linear;
+}
+.container-10 img:hover{
+    transform: scale(1.1);
+}
+.events-dates{
+    margin-top: 1rem;
 }
 .Events-image{
     padding-top: 20px;
@@ -447,6 +570,7 @@ body{
 .kathmandu-text,.workshop-text,.road-text,.training-text{
     width:310px;
     height:70px;
+    margin-top: 0.5rem;
 }
 .container-11{
     width: 90%;
@@ -518,7 +642,7 @@ body{
     border-top: 1px solid;
 }
 .activities{
-    position: relative;
+    position:relative;
     top:-125px;
     left: -30px;
     width: 160px;
@@ -574,9 +698,254 @@ body{
 .sub4-cont-12{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
     margin-left: 40px;
     margin-top: 20px;
 }
 .Centre-1992{
     margin-left: 40px;
+}
+@media screen and (max-width:440px){
+    /* .container-1{
+        position: relative;
+        width:100%;
+        height: 140px;
+        background-color: #1E90FF;
+    } */
+    #image1{
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+    .sub-cont-1{
+        display: none;
+    }
+    .sub2-cont-1{
+        display: none;
+    }
+    .container-2{
+        position:relative;
+        width: 100%;
+        height: 60px;
+        background-color: #F5F5F5;
+    }
+    #Search-2{
+        width: 50%;
+        height: 2.5rem;
+        margin-top: 0.625rem;
+        margin-left: 2rem;
+        text-align: 20px right;
+        border-radius: 2.5rem;
+        padding-left: 2%;
+        border: none;
+        outline-color: #1E90FF;
+    }
+    #awasome-search-icon{
+        font-size: 1.8rem;
+        position: relative;
+        top: 0.7rem;
+        margin-left: -2.712rem;
+        cursor:pointer;
+    }
+    .container-3{
+        width: 100%;
+        height: 140px;
+        background-color: white;
+    }
+    .sub-cont-3{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0.7rem;
+    }
+    .sub-cont-3 .world{
+        font-weight: 30px;
+    }
+    .world{
+        margin-top: 20px;
+        margin-left: 0.325rem;
+    }
+    .sub3-cont-3{
+        display: flex;
+        flex-direction: row;
+        margin-top: 24px;
+        margin-left: 1.7rem;
+    
+    }
+    .textIndia{
+        margin-left: 10px;
+        font-size: larger; 
+    }
+    .container-4{
+        width: 100%;
+        height: 40px;
+        background-color: #F5F5F5;
+       
+    }
+    .sub-cont-4{
+        display: flex;
+        flex-direction: row;
+        margin-left:1.9rem;
+        
+    }
+    .description{
+        margin-top: 10px;
+        height: 30px;
+        border-bottom: 1px solid blue;
+    }
+    
+    .document{
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .document:hover{
+        border-bottom: 1px solid blue;
+    }
+    .assistance{
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .assistance:hover{
+        border-bottom: 1px solid blue;
+    }
+    .law{
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .law:hover{
+        border-bottom: 1px solid blue;
+    }
+    .container-5{
+        width: 90%;
+        height: 94rem;
+        border-bottom: 1px solid;
+        margin-left: 1.8px;
+    }
+    .sub-cont-5{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 1.7rem;
+    }
+    .properties42{
+        width: 70%;
+        height: 6.55rem;
+        border: none;
+        border-radius: 5px;
+        padding: 1.5rem;
+        margin-left: 1.7rem;
+        background-color: #F5F5F5;
+    }
+    .mandates4{
+        width: 70%;
+        height: 6.55rem;
+        border: none;
+        border-radius: 5px;
+        padding: 1.5rem;
+        margin-left: 1.7rem;
+        background-color: #F5F5F5;
+    }
+    .report151{
+        width: 70%;
+        height: 6.55rem;
+        border: none;
+        border-radius: 5px;
+        padding: 1.5rem;
+        margin-left: 1.7rem;
+        background-color: #F5F5F5;
+    }
+    .both-rati-mandate{
+        width:70%;
+        height: 160px;
+        padding: 1%;
+        margin-left: 1rem;
+        gap: 1.5rem;
+    }
+    .ratification{
+        height: 80px;
+        border-bottom: 1px solid;
+        gap: 1.5rem;
+    }
+    .sub2-cont-5{
+        display: flex;
+        flex-direction:column;
+        margin-top: 30px;
+        gap: 1.7rem;
+    }
+    .international-request35{
+        width: 70%;
+        height: 6.55rem;
+        border: none;
+        border-radius: 5px;
+        padding: 1.5rem;
+        margin-left: 1.7rem;
+        background-color: #F5F5F5;
+    }
+    .international-amount861{
+        width: 70%;
+        height: 6.55rem;
+        border: none;
+        border-radius: 5px;
+        padding: 1.5rem;
+        margin-left: 1.7rem;
+        background-color: #F5F5F5;
+    }
+    .both-country-world-heritage{
+        width:100%;
+        height: 140px;
+        padding: 1%;
+        margin-left: 1.25rem;
+        gap: 1.5rem;
+    }
+    .country a{
+        height: 60px;
+        text-decoration: none;
+    }
+    .country a:hover{
+        text-decoration-line: underline;
+    }
+    #world-heritage{
+        margin-left: 15px;
+    }
+    .world-heritage{
+        width: 100%;
+        margin-top: 1.5rem;
+        line-height: 2rem;
+    }
+    .world-heritage a{
+        text-decoration: none;
+    }
+    #world-heritage a:hover{
+        text-decoration-line: underline;
+    }
+    .mandate{
+        height: 70px;
+        margin-top: 30px;
+        border-bottom: 1px solid;
+    }
+    .container-6{
+        width: 90%;
+        height: 700px;
+        margin-left: 1.8rem;
+        border-bottom: 1px solid;
+    }
+    .properties-inscribed{
+        width: 300px;
+        height: 60px;
+        border: none;
+        padding-top: 10px;
+        line-height: 1.4;
+    }
+    .image{
+        border: none;
+    }
+    .image-culture{
+        display: flex;
+        flex-direction:column;
+        margin-top: 10px;
+       
+    }
 }

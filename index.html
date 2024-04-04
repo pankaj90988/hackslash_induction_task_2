@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unesco Heritage Sites</title>
-    <link rel="stylesheet" href="hackslashTask2.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"rel="stylesheet">
+    <!-- <script>
+       var a=confirm("Do you Realiy want to see my Website");
+       if(a) {
+        alert("You say Yes");
+        var a= prompt("Please Enter Your Name");
+        alert("Thank You"+" "+a+ "🥰");
+        alert("Lets visit my Website"+a+"🥰");
+       }else{
+        alert("You say No");
+        window.location.href="contentless.html";
+       }
+    </script> -->
 </head>
 <body>
     <div class="container-1">
@@ -16,15 +28,28 @@
           <div class="english"><h4>English</h4></div>
           <div class="login"><h4><a href="login page.html"target="_blank">Login   <i class="fas fa-user"></i></a></h4></div>
        </div>
+
        <div class="sub2-cont-1">
           <div class="our">
             <select name="choose" id="Our">
                 <option value="#">Our experties</option>
+                <option value="a">Convention Text</option>
+                <option value="b">Operational Guidlines</option>
+                <option value="c">Policy Compedium</option>
+                <option value="d">The General Assembly</option>
+                <option value="e">The Committee</option>
             </select>
           </div>
           <div class="thelist">
             <select name="choose" id="List">
                 <option value="#"><h3>The List</h3></option>
+               <option value="f">Criteria</option>
+               <option value="g">Upstream Process</option>
+               <option value="h">Tentative Lists</option>
+               <option value="i">Interactive Map</option>
+               <option value="j">World Heritage List Nominations</option>
+               <option value="k">New Inscribed Properties</option>
+               <option value="l">The List in Danger</option>
             </select>
           </div>
           <div class="activity">
@@ -45,14 +70,17 @@
           <div class="search-icon"></div>
        </div>
     </div>
+
     <div class="container-2">
         <input type="text"placeholder="States Parties Search"id="Search-2">
         <i class="fas fa-search"id="awasome-search-icon"></i>
     </div>
     <div class="container-3">
         <div class="sub-cont-3">
-            <div class="world"><pre>World Heritage Convention  ></pre></div>
-            <div class="state"><pre>States Parties  ></pre></div>
+            <div class="world">World Heritage Convention</div>
+            <div class="ar-head">></div>
+            <div class="state">States Parties</div>
+            <div class="ar-head">></div>
             <div class="India">India</div>
         </div>
         <div class="sub3-cont-3">
@@ -106,9 +134,8 @@
                  <div><h1>861,732</h1></div>
                  <div>International assistance Total Amount Approved (USD)</div>
             </div>
-            <div class="none">
-                 
-            </div>
+
+            
             <div class="both-country-world-heritage">
                 <div class="country">
                     <h3>UNESCO</h3>
@@ -135,7 +162,11 @@
         </div>
         <div class="image-culture">
             <div class="image">
-                <a href="https://www.google.com/mymaps/viewer?mid=1DBhwGb5W_2Vu5gPLMN_IsT7_thE&hl=en"><img src="image google map.png" alt="Google map"width="900px"height="500px"></a>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=900&amp;height=500&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe><a href="https://strandsgame.net/">Strands NYT</a>
+                    </div><style>.mapouter{position:relative;text-align:right;width:900px;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:900px;height:500px;}.gmap_iframe {width:900px!important;height:500px!important;}</style></div>
             </div>
              <div class="overflow">
                 <h3>Cultural</h3>
@@ -233,7 +264,7 @@
                <div class="skill-text">Business Skills for Natural World Heritage Sites Managers programme</div>
            </div>
            <div class="enhancing-image-text">
-                <div class="enhancing-image"><a href="https://whc.unesco.org/en/eoh/"><img src="enhancing image.jpg" alt="enhancing image"width="310px"height="210px"></a></div>
+                <div class="enhancing-image"><a href="index2.html"target="_blank"><img src="enhancing image.jpg" alt="enhancing image"width="310px"height="210px"></a></div>
                 <div class="enhancing-text">Enhancing our Heritage- Monitoring and Managing for success in World Natural Heritage Sites</div>
            </div>
            <div class="heritage-image-text">
@@ -277,21 +308,21 @@
            <div class="kathmandu-image-text">
               <div class="kathmandu-image"><img src="south asian.jpg" alt="Events image 1"width="310px"height="210px"></div>
               <div class="kathmandu-text">Sub-regional workshop for Asian Silk Roads Transboundary Serial Nomination and Cultural Landscape Initiatives,6-7 December 2021, Kathmandu, Nepal</div>
-              <p>6 Dec 2021 - 7 Dec 2021</p>
+              <p class="events-dates">6 Dec 2021 - 7 Dec 2021</p>
            </div>
            <div class="workshop-india-image-text">
                <div class="workshop-image"><img src="workshop image.jpg" alt="Events image 2"width="310px"height="210px"></div>
                <div class="workshop-text">Workshops on the Conservation of Cultural Heriatge in India</div>
-               <p>25 Nov 2019 - 26 Nov 2019</p>
+               <p class="events-dates">25 Nov 2019 - 26 Nov 2019</p>
            </div>
            <div class="silk-road-image-text">
                 <div class="road-image"><img src="silk road image.jpg" alt="Events image 3"width="310px"height="210px"></div>
                 <div class="road-text">5th Meeting of Coordinating Committee on the serial transnational World Heritage nomination of the Silk Roads</div>
-                <p>3 Dec 2018n - 7 Dec 2018</p>
+                <p class="events-dates">3 Dec 2018n - 7 Dec 2018</p>
            </div>
            <div class="training-workshop-text">
                  <div class="training-text">International Training Workshop on "Enhancing Capacity for Effective Management of Coastal and Marine World Heritage Sites of the Asia-Pacific Region"</div>
-                 <p>26 Feb 2016 - 28 Feb 2016</p>
+                 <p class="events-dates">26 Feb 2016 - 28 Feb 2016</p>
            </div>
         </div>
     </div>
@@ -464,9 +495,13 @@
         </div>
         <div class="sub4-cont-12">
             <div class="Unesco-bottom"><p>UNESCO</p></div>
+            <div>></div>
             <div class="culturte-bottom"><p>Culture</p></div>
+            <div>></div>
             <div class="heritage-centre"><p>World Heritage Centre</p></div>
+            <div>></div>
             <div class="about-world"><p>About World Heritage</p></div>
+            <div>></div>
             <div class="State-bottom"><p>The States Parties</p></div>
         </div>
         <div class="Centre-1992">
