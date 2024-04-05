@@ -291,6 +291,12 @@ body{
     padding-left: 2.5rem;
     padding-top: 1rem;
 }
+.news-box img{
+    transition: all 1s linear;
+}
+.news-box img:hover{
+    transform: scale(1.1);
+}
 .description-and-image{
     display: flex;
     flex-direction: row;
@@ -301,6 +307,7 @@ body{
 }
 .image-text{
     width: 65%;
+    margin-top: 0.5rem;
 }
 .image-date{
     margin-top: 0.5rem;
