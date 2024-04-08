@@ -292,7 +292,7 @@ body{
     padding-top: 1rem;
 }
 .news-box img{
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 .news-box img:hover{
     transform: scale(1.1);

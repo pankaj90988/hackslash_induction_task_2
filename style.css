@@ -482,9 +482,6 @@ body{
     border-bottom: 1px solid;
     margin-left: 80px;
 }
-.container-8 img{
-    transition: all 1s linear;
-}
 .container-8 img:hover{
         transform: scale(1.1);
 }
@@ -523,7 +520,7 @@ body{
     margin-left: 80px;
 }
 .container-9 img{
-    transition: all 1s  linear;
+    transition: all 0.5s  linear;
 }
 .container-9 img:hover{
     transform: scale(1.1);
@@ -551,7 +548,7 @@ body{
     margin-left: 80px;
 }
 .container-10 img{
-    transition: all 1s linear;
+    transition: all 0.5s linear;
  }  
 .container-10 img:hover{
     transform: scale(1.1);
